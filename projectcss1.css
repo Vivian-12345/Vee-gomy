@@ -1,0 +1,71 @@
+
+a{
+    text-decoration: none;
+    color:rgb(132, 49, 49);
+}
+a:hover{
+    color: rgb(140, 0, 255)
+}
+#header{
+    display: flex;
+    justify-content: space-between;
+    color:rgb(132, 49, 49);
+    background-color: antiquewhite;
+    border-radius: 20px;
+    padding: 20px;
+}
+.hero{
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),  url("pastry.jpg");
+    background-size: cover;
+    padding-bottom: 150px;
+    text-align: center;
+    color: rgb(127, 245, 24);
+    border-radius: 40px;
+    font-style: italic;
+    padding-top: 150px;
+} 
+#about{
+    background-color: antiquewhite;
+    border-radius: 40px;
+    .col-5{
+        background-image: url(bakery.avif);
+        background-size: cover;
+        padding: 90px;
+        border-radius: 40px;
+    }
+}
+#Menu{
+    background-color: rgb(241, 220, 230);
+    padding: 100px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+    justify-content: center;
+    border-radius: 40px;
+}
+img{
+    border-radius: 40px;
+}
+#footer{
+    padding: 80px;
+    border-radius: 10px;
+    text-align: center;
+}
+#Contact{
+    padding-bottom: 20px;
+}
+@media (max-width: 600px) {
+    #header{
+        display: flex;
+        flex-direction: column;
+    }
+    #Menu{
+        display: grid;
+        grid-template-columns: auto;
+    }
+}
+@media (min-width: 600px) and (max-width: 768px){
+    #aside{
+        grid-column: 1/span2;
+    }
+}
