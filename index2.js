@@ -54,11 +54,4 @@ function reverseString(str) {
     return result;
   }
   
-
-
-  function findMax(arr){
-    return Math.max(...arr);
-  }
-
-  console.log(findMax([5,8,4,19,9]));
   
